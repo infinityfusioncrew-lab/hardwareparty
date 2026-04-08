@@ -1,0 +1,19 @@
+{
+  "meta": {},
+  "toggles": {
+    "showLineupSection": false,
+    "showDjCard1": false,
+    "showDjCard2": false,
+    "showDjCard3": false,
+    "showDjCard4": false,
+    "showDjCard5": false,
+    "showDjCard6": false,
+    "showDjCard7": false,
+    "showDjCard8": false,
+    "showDjCard9": false
+  },
+  "fields": {},
+  "links": {},
+  "media": {},
+  "translations": {}
+}

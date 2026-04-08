@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>HARDWARE | Convite Oficial</title>
+  <style>
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    table { border-collapse: collapse !important; }
+    img { border: 0; outline: none; text-decoration: none; display: block; -ms-interpolation-mode: bicubic; }
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      background: #050505;
+    }
+    a { text-decoration: none; }
+    .preheader {
+      display: none !important;
+      visibility: hidden;
+      opacity: 0;
+      color: transparent;
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      mso-hide: all;
+    }
+    .shell {
+      width: 100%;
+      background: linear-gradient(180deg, #040404 0%, #09090b 46%, #120506 100%);
+    }
+    .container {
+      width: 100%;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .frame {
+      background: #09090b;
+      border: 1px solid #1f2830;
+      border-radius: 22px;
+      overflow: hidden;
+    }
+    .edge-line {
+      height: 2px;
+      background: linear-gradient(90deg, #00f3ff 0%, #ff003c 100%);
+    }
+    .outer-pad { padding: 22px 14px 28px; }
+    .inner-pad { padding: 24px 22px 26px; }
+    .logo {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 34px;
+      line-height: 34px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .logo span { color: #ff003c; }
+    .chip {
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #d7fbff;
+      background: #101821;
+      border: 1px solid #243949;
+      border-radius: 999px;
+      padding: 10px 12px;
+    }
+    .eyebrow {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #9fefff;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .headline {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      line-height: 34px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0;
+    }
+    .copy {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #d6dbe0;
+      margin: 0;
+    }
+    .muted {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 20px;
+      color: #97a1aa;
+      margin: 0;
+    }
+    .section-title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #ff7e6d;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255,255,255,0), rgba(0,243,255,0.35), rgba(255,0,60,0.45), rgba(255,255,255,0));
+    }
+    .fact-box {
+      background: #11141a;
+      border: 1px solid #232e37;
+      border-radius: 14px;
+    }
+    .fact-label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #8be8fb;
+      margin: 0 0 6px;
+    }
+    .fact-value {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0;
+    }
+    .alert-box {
+      background: linear-gradient(180deg, #1a0d10 0%, #120c10 100%);
+      border: 1px solid #42222b;
+      border-radius: 14px;
+    }
+    .alert-copy {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ffe3e6;
+      margin: 0;
+      font-weight: bold;
+    }
+    .terminal {
+      background: #080a0d;
+      border-left: 3px solid #ff003c;
+      border-radius: 10px;
+    }
+    .terminal-text {
+      font-family: Courier, monospace;
+      font-size: 13px;
+      line-height: 20px;
+      color: #d6d8dd;
+      margin: 0;
+    }
+    .faq-box {
+      background: #101319;
+      border: 1px solid #25313b;
+      border-radius: 14px;
+    }
+    .faq-item {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 19px;
+      color: #d7dde4;
+      margin: 0;
+    }
+    .subtle-box {
+      background: #120f14;
+      border: 1px solid #2f2228;
+      border-radius: 14px;
+    }
+    .subtle-copy {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 19px;
+      color: #d7cfd3;
+      margin: 0;
+    }
+    .cta-primary a,
+    .cta-secondary a {
+      display: block;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: bold;
+      padding: 16px 18px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+    }
+    .cta-primary a {
+      color: #ffffff;
+      background: #ff003c;
+    }
+    .cta-secondary a {
+      color: #eafcff;
+      background: #111823;
+      border: 1px solid #244050;
+    }
+    .footer {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+      color: #8c97a2;
+      text-align: center;
+    }
+    @media screen and (max-width: 620px) {
+      .outer-pad { padding: 0 !important; }
+      .frame {
+        border-radius: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+      }
+      .inner-pad { padding: 22px 18px !important; }
+      .logo { font-size: 28px !important; line-height: 28px !important; }
+      .headline { font-size: 25px !important; line-height: 29px !important; }
+      .copy { font-size: 15px !important; line-height: 22px !important; }
+      .stack,
+      .stack tbody,
+      .stack tr,
+      .stack td {
+        display: block !important;
+        width: 100% !important;
+      }
+      .mobile-gap {
+        display: block !important;
+        width: 100% !important;
+        height: 10px !important;
+        line-height: 10px !important;
+      }
+      .hero-image {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="preheader">HARDWARE confirma 10 de abril em Sao Paulo. Lista VIP ate 23h, local em Pinheiros e ingresso direto no clique.</div>
+
+  <!--
+    Antes de disparar:
+    1. Para preview local, coloque o flyer em ../assets/email/hardware-flyer-10-abril.jpg.
+    2. Para disparo real, troque esse caminho por uma URL absoluta hospedada.
+    3. Ajuste textos e links finais se necessario.
+  -->
+
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="shell">
+    <tr>
+      <td align="center" class="outer-pad">
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="container">
+          <tr>
+            <td class="frame">
+              <div class="edge-line"></div>
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding:18px 24px 14px;">
+                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="left">
+                          <p class="logo">HARD<span>WARE</span></p>
+                        </td>
+                        <td align="right">
+                          <span class="chip">10 de Abril</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="../assets/email/hardware-flyer-10-abril.jpg"
+                      alt="Flyer da HARDWARE para 10 de Abril"
+                      width="620"
+                      class="hero-image"
+                      style="width:100%; max-width:620px; height:auto;">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="inner-pad">
+                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <p class="eyebrow">Pocket Edition / Sao Paulo</p>
+                          <h1 class="headline">10 de abril. HARDWARE confirmada. Garanta sua entrada antes do pico da noite.</h1>
+                        </td>
+                      </tr>
+                      <tr><td height="12"></td></tr>
+                      <tr>
+                        <td>
+                          <p class="copy">Entrada a partir das 20h, lista VIP ate 23h, local em Pinheiros e atmosfera industrial para quem vive o hardtechno de verdade. Se voce quer entrar sem correria, este e o momento.</p>
+                        </td>
+                      </tr>
+                      <tr><td height="16"></td></tr>
+                      <tr><td class="divider"></td></tr>
+                      <tr><td height="16"></td></tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="stack">
+                            <tr>
+                              <td width="33.33%" style="padding:0 6px 0 0;">
+                                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="fact-box">
+                                  <tr><td style="padding:14px 14px 12px;">
+                                    <p class="fact-label">Data</p>
+                                    <p class="fact-value">10 de Abril</p>
+                                  </td></tr>
+                                </table>
+                              </td>
+                              <td class="mobile-gap" width="0" height="0"></td>
+                              <td width="33.33%" style="padding:0 3px;">
+                                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="fact-box">
+                                  <tr><td style="padding:14px 14px 12px;">
+                                    <p class="fact-label">Horario</p>
+                                    <p class="fact-value">20h ate 05h</p>
+                                  </td></tr>
+                                </table>
+                              </td>
+                              <td class="mobile-gap" width="0" height="0"></td>
+                              <td width="33.33%" style="padding:0 0 0 6px;">
+                                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="fact-box">
+                                  <tr><td style="padding:14px 14px 12px;">
+                                    <p class="fact-label">Local</p>
+                                    <p class="fact-value">Sky-na / Pinheiros</p>
+                                  </td></tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr><td height="14"></td></tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="alert-box">
+                            <tr>
+                              <td style="padding:14px 16px;">
+                                <p class="alert-copy">Lista VIP valida ate 23h. Evento 18+ com documento. Endereco salvo e ingresso no celular agilizam sua entrada.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr><td height="16"></td></tr>
+                      <tr>
+                        <td class="cta-primary">
+                          <a href="https://shotgun.live/pt-br/events/hardwareparty" target="_blank" rel="noopener noreferrer">Comprar ingresso agora</a>
+                        </td>
+                      </tr>
+                      <tr><td height="10"></td></tr>
+                      <tr>
+                        <td class="cta-secondary">
+                          <a href="https://chat.whatsapp.com/C6zI7dtX37H7d6lMpqUOi8" target="_blank" rel="noopener noreferrer">Entrar no grupo oficial</a>
+                        </td>
+                      </tr>
+                      <tr><td height="18"></td></tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="terminal">
+                            <tr>
+                              <td style="padding:16px 16px 14px;">
+                                <p class="section-title" style="margin:0 0 10px;">Classified Location Data</p>
+                                <p class="terminal-text">&gt; TARGET: PINHEIROS / SAO PAULO</p>
+                                <p class="terminal-text">&gt; LOCAL: SKY-NA SUSHI CLUB</p>
+                                <p class="terminal-text">&gt; ENDERECO: RUA BARTOLOMEU ZUNEGA, 151</p>
+                                <p class="terminal-text">&gt; ACESSO: 18+ COM DOCUMENTO</p>
+                                <p class="terminal-text">&gt; LISTA VIP: VALIDA ATE 23H</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr><td height="16"></td></tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="faq-box">
+                            <tr>
+                              <td style="padding:16px 16px 14px;">
+                                <p class="section-title" style="margin:0 0 10px;">Guia rapido da noite</p>
+                                <p class="faq-item">Lista VIP valida ate 23h.</p>
+                                <p class="faq-item">Evento para maiores de 18 anos com documento com foto.</p>
+                                <p class="faq-item">Chegue com ingresso salvo e rota aberta no celular.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr><td height="16"></td></tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="subtle-box">
+                            <tr>
+                              <td style="padding:14px 16px;">
+                                <p class="section-title" style="margin:0 0 8px;">Line-up em atualizacao</p>
+                                <p class="subtle-copy">Vanta Core, Lucid Rail e Mara Vex seguem como nomes de teste. Quando o line-up oficial fechar, este bloco pode virar anuncio principal ou ser removido para deixar o disparo ainda mais direto.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr><td height="16"></td></tr>
+                      <tr>
+                        <td>
+                          <p class="muted">Pocket Edition da HARDWARE. Hardtechno em Sao Paulo com leitura industrial, atmosfera crua e foco total em pista.</p>
+                        </td>
+                      </tr>
+                      <tr><td height="18"></td></tr>
+                      <tr><td class="divider"></td></tr>
+                      <tr><td height="16"></td></tr>
+                      <tr>
+                        <td class="footer">
+                          HARDWARE<br>
+                          Todos os direitos reservados.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

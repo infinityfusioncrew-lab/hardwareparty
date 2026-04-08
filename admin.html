@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARDWARE | Fusion Vault</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/admin.css?v=20260313p4">
+</head>
+<body>
+    <main class="admin-shell">
+        <header class="admin-head">
+            <div>
+                <h1 class="admin-title">Fusion Vault HARDWARE</h1>
+                <p class="admin-subtitle">Painel protegido para gerir secoes, links, midias e usuarios do site em ambiente real.</p>
+            </div>
+            <div class="head-actions">
+                <a class="site-link" href="/index.html" target="_blank" rel="noopener noreferrer">Abrir site</a>
+            </div>
+        </header>
+
+        <section class="card" id="auth-card">
+            <h2 class="card-title">Acesso ao painel</h2>
+            <p class="card-description">Login por e-mail e senha via servidor local. O acesso final do painel fica em <strong>/cyber/</strong>.</p>
+            <form id="login-form" class="grid">
+                <div>
+                    <label for="login-user">E-mail</label>
+                    <input id="login-user" name="username" type="email" autocomplete="username" required>
+                </div>
+                <div>
+                    <label for="login-pass">Senha</label>
+                    <input id="login-pass" name="password" type="password" autocomplete="current-password" required>
+                </div>
+                <div class="actions">
+                    <button class="btn-primary" type="submit">Entrar</button>
+                </div>
+            </form>
+            <div id="auth-status" class="status"></div>
+            <p class="note">Use este painel para ocultar secoes sem apagar conteudo, atualizar o site e gerir acessos internos com seguranca.</p>
+        </section>
+
+        <section id="workspace-shell" class="workspace hidden">
+            <div class="workspace-main">
+                <section class="card" id="panel-card">
+                    <h2 class="card-title">Conteudo do site</h2>
+                    <p class="card-description">Edite o site sem codigo. Voce pode habilitar ou ocultar secoes, atualizar links, imagens, logos e validar em preview mobile.</p>
+
+                    <div class="toolbar-actions">
+                        <button type="button" class="btn-primary" id="save-btn">Salvar alteracoes</button>
+                        <button type="button" class="btn-secondary" id="export-btn">Exportar JSON</button>
+                        <button type="button" class="btn-secondary" id="import-btn">Importar JSON</button>
+                        <button type="button" class="btn-danger" id="reset-btn">Resetar overrides</button>
+                        <button type="button" class="btn-secondary" id="logout-btn">Sair</button>
+                    </div>
+                    <input type="file" id="import-file" accept="application/json" class="hidden">
+                    <div id="panel-status" class="status"></div>
+                    <p class="help">Fluxo recomendado: ajuste os campos, acompanhe no preview mobile e finalize em <strong>Salvar alteracoes</strong>.</p>
+
+                    <form id="content-form">
+                        <section class="subcard">
+                            <h3 class="section-title">Meta do evento</h3>
+                            <div id="meta-fields" class="grid"></div>
+                        </section>
+
+                        <section class="subcard">
+                            <h3 class="section-title">Visibilidade dos blocos</h3>
+                            <p class="help">Ative ou oculte secoes em tempo real sem apagar conteudo.</p>
+                            <div id="toggle-fields" class="toggle-grid"></div>
+                        </section>
+
+                        <section class="subcard">
+                            <h3 class="section-title">Textos fixos</h3>
+                            <div id="fixed-fields" class="grid"></div>
+                        </section>
+
+                        <section class="subcard">
+                            <h3 class="section-title">Midias (imagens e logos)</h3>
+                            <div id="media-fields" class="media-grid"></div>
+                        </section>
+
+                        <section class="subcard">
+                            <h3 class="section-title">Links e destinos</h3>
+                            <div id="link-fields" class="grid"></div>
+                        </section>
+
+                        <section class="subcard">
+                            <h3 class="section-title">Textos PT-BR</h3>
+                            <div id="translation-fields" class="grid grid-1"></div>
+                        </section>
+                    </form>
+                </section>
+
+                <section class="card" id="users-card">
+                    <h2 class="card-title">Usuarios do painel</h2>
+                    <p class="card-description">Cadastre acessos futuros por e-mail e senha. O usuario principal permanece como admin.</p>
+                    <div id="session-summary" class="status"></div>
+                    <form id="user-create-form" class="grid">
+                        <div>
+                            <label for="new-user-email">E-mail do novo usuario</label>
+                            <input id="new-user-email" type="email" autocomplete="off" required>
+                        </div>
+                        <div>
+                            <label for="new-user-pass">Senha inicial</label>
+                            <input id="new-user-pass" type="password" autocomplete="new-password" required>
+                        </div>
+                        <div>
+                            <label for="confirm-user-pass">Confirmar senha</label>
+                            <input id="confirm-user-pass" type="password" autocomplete="new-password" required>
+                        </div>
+                        <div>
+                            <label for="new-user-role">Perfil</label>
+                            <select id="new-user-role">
+                                <option value="editor">Editor</option>
+                                <option value="admin">Admin</option>
+                                <option value="viewer">Viewer</option>
+                            </select>
+                        </div>
+                        <div class="checkbox-inline">
+                            <input id="new-user-active" type="checkbox" checked>
+                            <label for="new-user-active">Usuario ativo</label>
+                        </div>
+                        <div class="actions">
+                            <button type="submit" class="btn-secondary">Cadastrar usuario</button>
+                            <button type="button" class="btn-secondary" id="refresh-users-btn">Atualizar lista</button>
+                        </div>
+                    </form>
+                    <div id="user-create-status" class="status"></div>
+                    <div id="users-list" class="user-list"></div>
+                </section>
+            </div>
+
+            <aside class="workspace-side">
+                <section class="card preview-card">
+                    <h2 class="card-title">Preview rapido</h2>
+                    <p class="card-description">Use o modo mobile para validar exatamente como vai aparecer no celular.</p>
+                    <div class="preview-tools">
+                        <button type="button" class="btn-secondary is-active" id="preview-desktop-btn">Desktop</button>
+                        <button type="button" class="btn-secondary" id="preview-mobile-btn">Mobile</button>
+                        <button type="button" class="btn-secondary" id="refresh-preview-btn">Atualizar</button>
+                    </div>
+                    <label class="live-preview-toggle">
+                        <input type="checkbox" id="live-preview-toggle" checked>
+                        Preview em tempo real
+                    </label>
+                    <div class="actions" style="margin-top:8px;">
+                        <button type="button" class="btn-secondary" id="open-preview-tab-btn">Abrir preview em nova aba</button>
+                    </div>
+                    <div class="preview-frame-wrap" id="preview-frame-wrap">
+                        <iframe id="site-preview" title="Preview do site" src="/index.html"></iframe>
+                    </div>
+                    <p class="help">Dica: para imagens e logos, voce pode usar upload local ou caminho relativo dentro de <strong>assets/</strong>.</p>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <script src="/assets/js/site-config.js?v=20260313p4"></script>
+    <script src="/assets/js/cms-runtime.js?v=20260313p4"></script>
+    <script src="/assets/js/admin.js?v=20260313p4"></script>
+</body>
+</html>
+

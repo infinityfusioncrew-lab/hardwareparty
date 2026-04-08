@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96" role="img" aria-labelledby="title">
+  <title>Sky-na Sushi Club</title>
+  <circle cx="72" cy="48" r="24" fill="none" stroke="#00f3ff" stroke-width="3"/>
+  <path d="M58 50c8-10 18-14 30-14 7 0 13 1 20 4-7 1-13 5-18 10-4 4-8 10-10 18-3-8-7-14-12-18-5-5-11-9-18-10 3-1 5-2 8-2z" fill="#f6fbff"/>
+  <text x="210" y="43" text-anchor="middle" fill="#f6fbff" font-size="20" font-family="Rajdhani, Arial, sans-serif" letter-spacing="3">SKY-NA</text>
+  <text x="210" y="65" text-anchor="middle" fill="#00f3ff" font-size="14" font-family="Share Tech Mono, monospace" letter-spacing="2">SUSHI CLUB</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96" role="img" aria-labelledby="title">
+  <title>Hard Federal</title>
+  <path d="M60 22h22v20h20v12H82v20H60V54H40V42h20V22z" fill="#ff003c"/>
+  <path d="M120 28h26l12 16 12-16h26l-24 28 24 12h-24l-14-8-14 8h-24l24-12-24-28zm92 0h20v44h-20zm28 0h44v14h-22v5h18v12h-18v13h-22V28z" fill="#f6fbff"/>
+  <text x="160" y="84" text-anchor="middle" fill="#f6fbff" font-size="21" font-family="Rajdhani, Arial, sans-serif" letter-spacing="4">HARD FEDERAL</text>
+</svg>

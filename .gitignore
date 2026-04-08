@@ -1,0 +1,11 @@
+.hardware-cms/
+.mobile-server.err.log
+.mobile-server.log
+.mobile-server.pid
+.mobile-tunnel.err.log
+.mobile-tunnel.log
+.mobile-tunnel.pid
+node_modules/
+*.tmp
+assets/videos/
+assets/djs/dj1/9.mp4

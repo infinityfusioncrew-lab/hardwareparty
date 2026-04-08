@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96" role="img" aria-labelledby="title">
+  <title>Nexus Brasil</title>
+  <path d="M64 24h28l24 24-24 24H64l24-24-24-24zm72 0h30l18 18 18-18h30l-34 32 38 16h-31l-22-10-22 10h-31l38-16-34-32z" fill="#f4fbff"/>
+  <path d="M64 24h28l24 24-24 24H64l24-24-24-24z" fill="none" stroke="#00f3ff" stroke-width="3"/>
+  <text x="250" y="57" text-anchor="middle" fill="#00f3ff" font-size="20" font-family="Rajdhani, Arial, sans-serif" letter-spacing="3">NEXUS BRASIL</text>
+</svg>
